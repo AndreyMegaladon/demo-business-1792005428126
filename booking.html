@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu Mesa | GastroExperience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-neutral-900/80 border-b border-neutral-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-500">GASTRO<span class="text-white">EXPERIENCE</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-neutral-300 hover:text-amber-400 transition">Inicio</a>
+                    <a href="about.html" class="text-neutral-300 hover:text-amber-400 transition">Nosotros</a>
+                    <a href="services.html" class="text-neutral-300 hover:text-amber-400 transition">Menú</a>
+                    <a href="gallery.html" class="text-neutral-300 hover:text-amber-400 transition">Galería</a>
+                    <a href="contacts.html" class="text-neutral-300 hover:text-amber-400 transition">Contacto</a>
+                    <a href="booking.html" class="bg-gradient-to-r from-amber-500 to-amber-600 text-neutral-950 font-semibold px-5 py-2 rounded-full hover:shadow-lg transition">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-20 bg-neutral-800 text-center px-4">
+        <h1 class="text-4xl sm:text-5xl font-extrabold mb-4">Reserva tu <span class="text-amber-500">Mesa</span></h1>
+        <p class="text-neutral-400 max-w-2xl mx-auto">Garantiza tu experiencia culinaria rellenando el siguiente formulario.</p>
+    </header>
+
+    <section class="py-20 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <form action="https://formsubmit.co/contacto@gastroexperience.com" method="POST" class="bg-neutral-800/50 border border-neutral-700 p-8 rounded-xl shadow-xl space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Nombre</label>
+                    <input type="text" name="Nombre" required class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Teléfono</label>
+                    <input type="tel" name="Teléfono" required class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Email</label>
+                    <input type="email" name="Email" required class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Fecha</label>
+                    <input type="date" name="Fecha" required class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2">Hora</label>
+                    <input type="time" name="Hora" required class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Col. de invitados</label>
+                    <input type="number" name="Invitados" min="1" max="12" value="2" required class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2">Servicio</label>
+                    <select name="Servicio" class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        <option value="Cena">Cena</option>
+                        <option value="Comida">Comida</option>
+                        <option value="Evento Especial">Evento Especial</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium mb-2">Comentario (Alergias, peticiones especiales)</label>
+                <textarea name="Comentario" rows="4" class="w-full bg-neutral-900 border border-neutral-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 text-neutral-950 font-bold py-4 rounded-lg shadow-xl hover:from-amber-400 hover:to-amber-500 transition">Confirmar Reserva</button>
+        </form>
+    </section>
+
+    <footer class="bg-neutral-950 border-t border-neutral-800 py-12 text-center text-neutral-500 text-sm">
+        <p>&copy; 2025 GastroExperience. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
