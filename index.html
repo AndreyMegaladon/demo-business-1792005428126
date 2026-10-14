@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante & Experiencia Culinaria | Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-neutral-900/80 border-b border-neutral-800 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-500">GASTRO<span class="text-white">EXPERIENCE</span></a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-amber-500 font-medium hover:text-amber-400 transition">Inicio</a>
+                    <a href="about.html" class="text-neutral-300 hover:text-amber-400 transition">Nosotros</a>
+                    <a href="services.html" class="text-neutral-300 hover:text-amber-400 transition">Menú</a>
+                    <a href="gallery.html" class="text-neutral-300 hover:text-amber-400 transition">Galería</a>
+                    <a href="contacts.html" class="text-neutral-300 hover:text-amber-400 transition">Contacto</a>
+                    <a href="booking.html" class="bg-gradient-to-r from-amber-500 to-amber-600 text-neutral-950 font-semibold px-5 py-2 rounded-full hover:shadow-lg hover:from-amber-400 hover:to-amber-500 transition">Reservar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative min-h-screen flex items-center justify-center bg-cover bg-center px-4" style="background-image: linear-gradient(to right, rgba(10,10,10,0.9), rgba(10,10,10,0.6)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');">
+        <div class="text-center max-w-3xl mx-auto">
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-6 text-white">Sabores únicos que <span class="text-amber-500">despiertan tus sentidos</span></h1>
+            <p class="text-lg sm:text-xl text-neutral-300 mb-8">Una propuesta gastronómica innovadora que fusiona la tradición con la alta cocina contemporánea en un ambiente inolvidable.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="booking.html" class="bg-gradient-to-r from-amber-500 to-amber-600 text-neutral-950 font-bold px-8 py-4 rounded-full shadow-xl hover:from-amber-400 hover:to-amber-500 transition">Reservar Mesa</a>
+                <a href="services.html" class="border border-neutral-700 bg-neutral-900/50 backdrop-blur font-bold px-8 py-4 rounded-full hover:bg-neutral-800 transition">Ver Menú</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Platos <span class="text-amber-500">Destacados</span></h2>
+            <p class="text-neutral-400 max-w-xl mx-auto">Descubre las creaciones más aclamadas por nuestros comensales, elaboradas con ingredientes frescos de temporada.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Plato principal" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Solomillo a la Brasa</h3>
+                    <p class="text-neutral-400 mb-4">Corte tierno acompañado de reducción de vino tinto y patatas rústicas trufadas.</p>
+                    <span class="text-amber-500 font-bold text-lg">24.00 €</span>
+                </div>
+            </div>
+            <div class="bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Entrante" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Tartar de Atún Rojo</h3>
+                    <p class="text-neutral-400 mb-4">Atún fresco de almadraba con emulsión de aguacate, sésamo y toque picante.</p>
+                    <span class="text-amber-500 font-bold text-lg">18.50 €</span>
+                </div>
+            </div>
+            <div class="bg-neutral-800/50 border border-neutral-700 rounded-xl overflow-hidden shadow-lg hover:shadow-xl hover:scale-105 transition duration-300">
+                <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87" alt="Postre" class="w-full h-64 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2">Tarta de Queso Cremosa</h3>
+                    <p class="text-neutral-400 mb-4">Nuestra famosa tarta de queso casera con base de galleta y coulis de frutos rojos.</p>
+                    <span class="text-amber-500 font-bold text-lg">8.00 €</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-neutral-800 py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Lo que dicen nuestros <span class="text-amber-500">clientes</span></h2>
+            <blockquote class="text-xl italic text-neutral-300 mb-6">"Una experiencia gastronómica increíble. Cada plato es una obra de arte y el servicio es impecable. ¡Repetiremos sin duda!"</blockquote>
+            <p class="font-semibold text-amber-500">— María González (Google Reviews)</p>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 border-t border-neutral-800 py-12 text-center text-neutral-500 text-sm">
+        <p>&copy; 2025 GastroExperience. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
